@@ -24,4 +24,5 @@ export async function processWithDelay(
 const controller = new AbortController();
 processWithDelay([1, 2, 3, 4, 5], 1000, controller.signal);
 
-setTimeout(() => controller.abort(), 11000);
+//cancel the process after 2.5 seconds
+setTimeout(() => controller.abort(), 2500);

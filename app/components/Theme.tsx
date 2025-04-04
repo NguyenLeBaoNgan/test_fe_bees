@@ -41,7 +41,6 @@ export default function ThemeProvider({
         </Button>
         {children}
       </div>
-      {children}
     </div>
   );
 }
